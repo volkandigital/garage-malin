@@ -12,8 +12,29 @@ FB_PAGE_ID = "1407634055776862"   # page Facebook « Le Garage »
 ROOT = pathlib.Path(__file__).parent
 
 
+_TOKEN = None
+
+
+def token():
+    """Jeton de la page. Si le secret contient un jeton utilisateur, on en déduit le jeton de page."""
+    global _TOKEN
+    if _TOKEN is None:
+        raw = os.environ["IG_TOKEN"]
+        _TOKEN = raw
+        try:
+            url = API + "/me/accounts?" + urllib.parse.urlencode({"fields": "id,access_token", "access_token": raw})
+            with urllib.request.urlopen(url, timeout=60) as r:
+                for page in json.load(r).get("data", []):
+                    if page["id"] == FB_PAGE_ID:
+                        _TOKEN = page["access_token"]
+                        print("Jeton utilisateur détecté : jeton de page utilisé.")
+        except urllib.error.HTTPError:
+            pass  # déjà un jeton de page
+    return _TOKEN
+
+
 def call(path, params, method="POST"):
-    params = {**params, "access_token": os.environ["IG_TOKEN"]}
+    params = {**params, "access_token": token()}
     data = urllib.parse.urlencode(params)
     url = API + path + ("?" + data if method == "GET" else "")
     req = urllib.request.Request(url, data=None if method == "GET" else data.encode(), method=method)
