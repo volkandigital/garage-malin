@@ -1,0 +1,40 @@
+name: Publication Instagram
+
+on:
+  schedule:
+    - cron: "0 16 * * *"   # 18 h à Paris en été
+    - cron: "0 17 * * *"   # 18 h à Paris en hiver
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Date du post (AAAA-MM-JJ), vide = aujourd'hui"
+        required: false
+
+permissions:
+  contents: write
+
+concurrency: publish
+
+jobs:
+  publier:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install playwright pillow
+      - name: Générer les images du jour
+        run: |
+          DAY="${{ github.event.inputs.date }}"; DAY="${DAY:-$(TZ=Europe/Paris date +%F)}"
+          for f in posts/$DAY-*.json; do [ -e "$f" ] && python3 render.py "$f"; done
+          git config user.name "garage-malin-bot"; git config user.email "bot@users.noreply.github.com"
+          git add out/ && git commit -m "Images du $DAY" && git push || echo "Rien à générer"
+      - name: Publier
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+        run: |
+          export COMMIT_SHA=$(git rev-parse HEAD)
+          sleep 20
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then python3 publish.py ${{ github.event.inputs.date }} --force; else python3 publish.py; fi
+          git add posts/ && git commit -m "Post publié" && git push || true
+

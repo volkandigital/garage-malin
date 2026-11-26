@@ -1,0 +1,105 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "tag": "FICHE MODÈLE",
+      "title": "Renault<br><span>Clio 4</span>",
+      "subtitle": "La bonne affaire d'occasion pour une première voiture ?"
+    },
+    {
+      "type": "stats",
+      "title": "L'<span>essentiel</span>",
+      "cards": [
+        {
+          "label": "Production",
+          "value": "2012 → 2019",
+          "note": "Énorme choix en occasion"
+        },
+        {
+          "label": "Record",
+          "value": "N°1",
+          "note": "La plus vendue en France sur toute sa carrière"
+        },
+        {
+          "label": "Conso diesel",
+          "value": "3,5 – 5 L",
+          "note": "aux 100 km selon version"
+        },
+        {
+          "label": "Moteurs conseillés",
+          "value": "TCe 90",
+          "note": "en essence, ou dCi 90 en diesel"
+        }
+      ]
+    },
+    {
+      "type": "pros",
+      "title": "Les <span>+</span>",
+      "items": [
+        {
+          "t": "Très bonne fiabilité",
+          "d": "Pas de défaut grave connu sur l'ensemble de la gamme"
+        },
+        {
+          "t": "Diesel très sobre",
+          "d": "Idéal si tu fais beaucoup de route"
+        },
+        {
+          "t": "Pièces partout",
+          "d": "Entretien simple et pas cher"
+        },
+        {
+          "t": "Le 1.2 16v 75",
+          "d": "Moteur peu recherché, donc moins cher, et réputé solide"
+        }
+      ]
+    },
+    {
+      "type": "cons",
+      "title": "À <span>vérifier</span>",
+      "items": [
+        {
+          "t": "Boîte auto Quickshift",
+          "d": "Phase 1 : à-coups, fiabilité médiocre. À éviter"
+        },
+        {
+          "t": "dCi 110 + boîte EDC",
+          "d": "Turbo plus sollicité, boîte à faire contrôler"
+        },
+        {
+          "t": "Silentblocs",
+          "d": "À surveiller après 100 000 km"
+        },
+        {
+          "t": "Carnet d'entretien",
+          "d": "Exige-le complet, surtout en diesel"
+        }
+      ]
+    },
+    {
+      "type": "verdict",
+      "title": "Le <span>verdict</span>",
+      "score": "8",
+      "text": "Un des choix les plus sûrs pour un premier achat d'occasion.",
+      "for": "Jeune conducteur qui veut une citadine fiable. Vise une TCe 90 ou une dCi 90 avec carnet complet, sans boîte Quickshift."
+    },
+    {
+      "type": "cta",
+      "question": "Et toi, tu prendrais une Clio 4 ou une 208 ? Dis-le en commentaire"
+    }
+  ],
+  "sources": "Planète Renault, Car Verif, Autohero, Fiches-auto",
+  "caption": "La Clio 4, bonne affaire pour une première voiture ? 🚗\n\nFiabilité, conso, moteurs à viser et pièges à éviter : tout est dans le carrousel 👉\n\n🔖 Enregistre ce post pour ton prochain achat\n📤 Envoie-le à un pote qui cherche une voiture",
+  "hashtags": [
+    "#clio4",
+    "#renaultclio",
+    "#voitureoccasion",
+    "#premierevoiture",
+    "#jeuneconducteur",
+    "#conseilauto",
+    "#automobile",
+    "#legaragemalin"
+  ],
+  "status": "published",
+  "note": "publié à la main le 26/11/2026"
+}
