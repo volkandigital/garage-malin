@@ -91,7 +91,7 @@ def slide(s):
                       f'<div class="d">{e(x.get("d",""))}</div></div></div>' for x in s["items"])
         return f'<h2>{s["title"]}</h2><div class="items">{its}</div>'
     if t == "verdict":
-        return (f'<h2>{s["title"]}</h2><div class="score">{e(s["score"])}<small>/10</small></div>'
+        return (f'<h2>{s["title"]}</h2><div class="score">{e(s["score"])}{"<small>/10</small>" if str(s["score"]).isdigit() else ""}</div>'
                 f'<div class="verdict">{e(s["text"])}</div><div class="for"><b>Pour qui ?</b> {e(s["for"])}</div>')
     if t == "cta":
         return (f'<div class="cta"><h1>T\'AS <span>AIMÉ ?</span></h1></div><div class="acts">'

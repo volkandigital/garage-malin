@@ -40,13 +40,12 @@ def main():
     if "--force" not in sys.argv and now.hour != 18:
         print(f"Il est {now:%H:%M} à Paris, publication seulement à 18 h."); return
     day = args[0] if args else now.strftime("%Y-%m-%d")
-    posts = sorted(ROOT.glob(f"posts/{day}-*.json"))
-    if not posts:
-        print(f"Aucun post pour {day}."); return
-    post_path = posts[0]
+    todo = [p for p in sorted(ROOT.glob(f"posts/{day}-*.json"))
+            if json.loads(p.read_text()).get("status") not in ("published", "blocked")]
+    if not todo:
+        print(f"Aucun post à publier pour {day}."); return
+    post_path = todo[0]
     post = json.loads(post_path.read_text())
-    if post.get("status") in ("published", "blocked"):
-        print(f"{post_path.name} : statut {post['status']}, rien à faire."); return
     imgs = sorted((ROOT / "out" / post_path.stem).glob("slide-*.jpg"), key=lambda p: int(p.stem.split("-")[1]))
     if not 2 <= len(imgs) <= 20:
         raise SystemExit(f"{len(imgs)} images trouvées, il en faut 2 à 20.")
