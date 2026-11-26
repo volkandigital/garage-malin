@@ -8,6 +8,7 @@ from zoneinfo import ZoneInfo
 
 API = "https://graph.facebook.com/v25.0"
 IG_USER_ID = "17841474308617997"  # @legaragemalin
+FB_PAGE_ID = "1407634055776862"   # page Facebook « Le Garage »
 ROOT = pathlib.Path(__file__).parent
 
 
@@ -61,6 +62,17 @@ def main():
     wait_ready(car)
     pub = call(f"/{IG_USER_ID}/media_publish", {"creation_id": car})
     post.update(status="published", media_id=pub["id"], published_at=now.isoformat())
+    # Même carrousel sur la page Facebook (un échec ici ne bloque pas Instagram)
+    try:
+        ids = [call(f"/{FB_PAGE_ID}/photos", {"url": f"{base}/{p.relative_to(ROOT).as_posix()}", "published": "false"})["id"] for p in imgs]
+        fb = {"message": caption}
+        for i, pid in enumerate(ids):
+            fb[f"attached_media[{i}]"] = json.dumps({"media_fbid": pid})
+        post["fb_post_id"] = call(f"/{FB_PAGE_ID}/feed", fb)["id"]
+        print(f"Publié sur la page Facebook : {post['fb_post_id']}")
+    except SystemExit as e:
+        post["fb_error"] = str(e)
+        print(f"Facebook : échec ({e})")
     post_path.write_text(json.dumps(post, ensure_ascii=False, indent=2))
     print(f"Publié sur @legaragemalin : media {pub['id']}")
 
