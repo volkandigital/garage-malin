@@ -1,0 +1,104 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "tag": "FICHE MOTO A2",
+      "title": "Yamaha<br><span>MT-07</span>",
+      "subtitle": "La bonne première moto pour ton permis A2 ?"
+    },
+    {
+      "type": "stats",
+      "title": "L'<span>essentiel</span>",
+      "cards": [
+        {
+          "label": "Moteur",
+          "value": "689 cm³",
+          "note": "Bicylindre, sortie en 2014"
+        },
+        {
+          "label": "Puissance",
+          "value": "74,8 ch",
+          "note": "73,4 ch dès 2021, bridable à 35 kW pour le A2"
+        },
+        {
+          "label": "Poids",
+          "value": "182 kg",
+          "note": "tous pleins faits (ABS, 2014-2020)"
+        },
+        {
+          "label": "Conso",
+          "value": "4,2 – 4,3 L",
+          "note": "aux 100 km selon Yamaha"
+        }
+      ]
+    },
+    {
+      "type": "pros",
+      "title": "Les <span>+</span>",
+      "items": [
+        {
+          "t": "Compatible permis A2",
+          "d": "Version bridée à 35 kW proposée par Yamaha"
+        },
+        {
+          "t": "Légère et agile",
+          "d": "Redoutable en ville et en virage serré"
+        },
+        {
+          "t": "Selle à 805 mm",
+          "d": "Accessible quand tu débutes"
+        },
+        {
+          "t": "Elle évolue avec toi",
+          "d": "Après 2 ans de A2 et 7 h de formation : permis A"
+        }
+      ]
+    },
+    {
+      "type": "cons",
+      "title": "À <span>vérifier</span>",
+      "items": [
+        {
+          "t": "Suspensions souples",
+          "d": "Point faible n°1 : teste fourche et amortisseur"
+        },
+        {
+          "t": "Selle dure",
+          "d": "Inconfortable sur les longs trajets"
+        },
+        {
+          "t": "Corrosion",
+          "d": "Inspecte les durites de refroidissement"
+        },
+        {
+          "t": "Bridage A2",
+          "d": "Exige l'attestation de bridage avec la moto"
+        }
+      ]
+    },
+    {
+      "type": "verdict",
+      "title": "Le <span>verdict</span>",
+      "score": "8",
+      "text": "Facile, légère et sobre : un choix sûr pour débuter en A2.",
+      "for": "Jeune permis A2 qui veut une moto pour la ville et la route. Prévois un budget suspensions si tu as un gros gabarit."
+    },
+    {
+      "type": "cta",
+      "question": "MT-07 ou une autre pour ton A2 ? Dis-le en commentaire"
+    }
+  ],
+  "sources": "Yamaha Motor (fiches techniques), Service-Public.fr, Le Repaire des Motards, SlashGear",
+  "caption": "Yamaha MT-07 occasion pour le permis A2 : bon plan pour ta première moto ? 🏍️\n\nPuissance, bridage 35 kW, conso et les points à vérifier avant d'acheter : tout est dans le carrousel 👉\n\n🔖 Enregistre ce post pour ton prochain achat\n📤 Envoie-le à un pote qui passe son permis moto",
+  "hashtags": [
+    "#mt07",
+    "#yamahamt07",
+    "#permisa2",
+    "#motoa2",
+    "#jeunemotard",
+    "#premieremoto",
+    "#motooccasion",
+    "#legaragemalin"
+  ],
+  "status": "pending"
+}
