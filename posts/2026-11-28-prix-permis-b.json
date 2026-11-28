@@ -1,0 +1,104 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "tag": "VRAIS COÛTS",
+      "title": "Permis B<br><span>le vrai prix</span>",
+      "subtitle": "Combien tu vas vraiment payer en 2026 ?"
+    },
+    {
+      "type": "stats",
+      "title": "Les <span>chiffres</span>",
+      "cards": [
+        {
+          "label": "Forfait 20 h",
+          "value": "1 396 €",
+          "note": "prix moyen 2026, code compris"
+        },
+        {
+          "label": "Heure en plus",
+          "value": "56 €",
+          "note": "en moyenne, à chaque heure"
+        },
+        {
+          "label": "Heures réelles",
+          "value": "35 h",
+          "note": "en moyenne, pour 20 h minimum"
+        },
+        {
+          "label": "Examen du code",
+          "value": "30 €",
+          "note": "à chaque passage, 50,8 % de réussite en 2025"
+        }
+      ]
+    },
+    {
+      "type": "pros",
+      "title": "Les aides <span>qui restent</span>",
+      "items": [
+        {
+          "t": "Permis à 1 € par jour",
+          "d": "Prêt à taux zéro de 600 à 1 200 €, de 15 à 25 ans"
+        },
+        {
+          "t": "CPF jusqu'à 900 €",
+          "d": "Si tu es demandeur d'emploi, ou avec 100 € payés par un tiers"
+        },
+        {
+          "t": "Aides locales",
+          "d": "Région, département, mairie : cherche sur 1jeune1permis"
+        },
+        {
+          "t": "Boîte auto",
+          "d": "13 h minimum, forfait moyen à 1 070 €"
+        }
+      ]
+    },
+    {
+      "type": "cons",
+      "title": "Les <span>pièges</span>",
+      "items": [
+        {
+          "t": "Aide apprentis de 500 €",
+          "d": "Supprimée depuis le 21 février 2026"
+        },
+        {
+          "t": "Aide France Travail",
+          "d": "Supprimée depuis le 1er avril 2026"
+        },
+        {
+          "t": "Le forfait de 20 h",
+          "d": "C'est le minimum légal, pas ce qu'il te faudra"
+        },
+        {
+          "t": "Les frais cachés",
+          "d": "Accompagnement à l'examen souvent facturé : demande avant de signer"
+        }
+      ]
+    },
+    {
+      "type": "verdict",
+      "title": "Le <span>vrai prix</span>",
+      "score": "2 240 €",
+      "text": "Forfait moyen + 15 h en plus à 56 € : le budget réaliste avec 35 h de conduite.",
+      "for": "Toi qui t'inscris : compare le prix de l'heure en plus, pas juste le forfait. Et si tu as 15 ans, la conduite accompagnée a le meilleur taux de réussite."
+    },
+    {
+      "type": "cta",
+      "question": "Ton permis t'a coûté combien ? Dis-le en commentaire"
+    }
+  ],
+  "sources": "Service-Public.fr, Codes Rousseau (tarifs Club Rousseau 2026), Sécurité routière (bilan 2025), ASP, Sénat, economie.gouv.fr",
+  "caption": "Prix du permis B 2026 : combien ça coûte vraiment et quelles aides restent ? 🚗\n\nForfait, heures en plus, code, aides supprimées cette année… Le vrai budget est dans le carrousel 👉\n\n🔖 Enregistre ce post avant de t'inscrire en auto-école\n📤 Envoie-le à un pote qui va passer son permis",
+  "hashtags": [
+    "#permisb",
+    "#permisdeconduire",
+    "#prixpermis",
+    "#autoecole",
+    "#permisa1euro",
+    "#codedelaroute",
+    "#jeuneconducteur",
+    "#legaragemalin"
+  ],
+  "status": "pending"
+}
